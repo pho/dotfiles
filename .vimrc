@@ -1,3 +1,4 @@
+
 " Visuals
 set background=dark
 colorscheme solarized
