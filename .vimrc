@@ -1,7 +1,7 @@
 
 " Visuals
-set background=dark
 colorscheme solarized
+set background=dark
 syntax on
 " set t_Co=256 " 256 colors
 
@@ -30,6 +30,9 @@ set scrolloff=30
 set showmatch
 
 " Show line numbers
+set nu
+
+" Show cursor position
 set ruler
 
 " Folding options
