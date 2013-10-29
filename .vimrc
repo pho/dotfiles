@@ -36,10 +36,10 @@ set nu
 set ruler
 
 " Folding options
-nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
-vnoremap <Space> zf
-set foldmethod=syntax
-set foldcolumn=1
-set foldlevel=1
+" nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR>
+" vnoremap <Space> zf
+" set foldmethod=syntax
+" set foldcolumn=1
+" set foldlevel=1
 
 
