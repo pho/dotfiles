@@ -1,0 +1,18 @@
+# blacklist for usb autosuspend
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="1ea7", ATTR{idProduct}=="0064", GOTO="power_usb_rules_end"
+
+# Ducky One TKL
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="04d9", ATTR{idProduct}=="0171", GOTO="power_usb_rules_end"
+
+# Razer BlackWidow
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="1532", ATTR{idProduct}=="011a", GOTO="power_usb_rules_end"
+
+# Krom Kernel TKL
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="0c45", ATTR{idProduct}=="7664", GOTO="power_usb_rules_end"
+
+# G502 Mouse
+ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="046d", ATTR{idProduct}=="c332", GOTO="power_usb_rules_end"
+
+# Default 
+ACTION=="add", SUBSYSTEM=="usb", TEST=="power/control", ATTR{power/control}="auto"
+LABEL="power_usb_rules_end"
